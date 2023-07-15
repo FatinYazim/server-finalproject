@@ -1,0 +1,26 @@
+// import query from "../../db/index.js";
+
+// const deleteUser = async (req, res) => {
+//   try {
+//     const { id } = req.params;
+
+//     const dbRes = await query(
+//       "UPDATE users SET typeofleave = NULL,fullday=NULL, datestart = NULL, dateend = NULL, reason = NULL WHERE id = $1",
+//       [id]
+//     );
+
+//     const serverRes = {
+//       message: "User data deleted successfully",
+//     };
+//     res.status(200).json(serverRes);
+//   } catch (error) {
+//     const { name, table, constraint, detail } = error;
+//     const serverRes = {
+//       message: detail,
+//       error: { name, table, constraint },
+//     };
+//     res.status(500).json(serverRes);
+//   }
+// };
+
+// export default deleteUser;
